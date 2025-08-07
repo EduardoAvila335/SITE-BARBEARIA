@@ -6,4 +6,4 @@ Detalhes do site:
 
 2. Imagens interativas no site a cada 5 segundos eles trocão.
 
-3. Controle de imagens que seguem a ordem das imagens.
+3. Controle de imagens que são os indicadores que mudam conforme a imagem que tá aparecendo na tela.
