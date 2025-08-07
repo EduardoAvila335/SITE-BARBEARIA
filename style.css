@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    transition: 0.2s linear;
+}
+
+body {
+    background-color: black;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: black;
+    z-index: 2;
+
+
+
+    button {
+        background: transparent;
+        border: none;
+        margin: 3rem;
+
+        img{
+            width: 2rem;
+            cursor: pointer;
+        }
+        img:active{
+        width: 2.5rem;
+    }
+    
+    }
+
+    img {
+        width: 4.5rem;
+    }
+}
+main{
+
+    .Barbearia{
+        display: none;
+    }
+    .ativa{
+        display: block;
+    }
+
+     div img {
+        margin: 40px auto;
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 0;
+        z-index: 0;
+    }
+}
+
+
+.controle-imagens{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    div {
+        
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        width: 70px;
+        height: 10px;
+        margin-bottom: 20px;
+        margin-top: -3.5rem;
+    }
+
+    .ativado {
+        background-color: white;
+    }
+}
+
+
+.menu-aberto {
+    position: fixed;
+    z-index: 2;
+    top: 5rem;
+    left: 20px;
+    background-color: black;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    display: none;
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+        nav a {
+        background: linear-gradient(to top right, rgb(255, 255, 255) 50%, rgb(44, 44, 44));
+        background-clip: text;
+        color: transparent;
+        font-size: 20px;
+    }
+    nav a:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 2px;
+    }
+    }
+
+
+.open {
+    display: block;
+}
+
+.mascara {
+    margin: 40px auto;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,rgb(0, 0, 0,10), rgb(0, 0, 0,0));
+
+    .content{
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        h1{
+            font-size: 2.5rem;
+        }
+
+        a{
+            width: 10.7rem;
+            padding: 8px 5px;
+            background-color: white;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+        }
+        a:hover{
+            padding: 8px 10px;
+        }
+    }
+
+}
+
+
+.conteiner-serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 0;
+    gap: 20px;
+
+
+    a{
+        width: 5rem;
+        padding: 8px 5px;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+    a:hover{
+        padding: 8px 10px;
+    }
+
+    h2{
+        font-size: xx-large;
+    }
+
+
+    h3{
+        font-size: 1.2rem;
+        font-weight: lighter;
+        
+    }
+}
+
+.serviços {
+    display: flex;
+
+    .cabelo{
+        width: 17rem;
+        height: 5rem;
+        margin: 20px;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 5rem 5rem;
+        opacity: 0.5;
+        background: url(https://media.istockphoto.com/id/640274128/pt/foto/barber-using-scissors-and-comb.jpg?s=612x612&w=0&k=20&c=83Oj99wpKeTKoIOgRJgIOEzu46Ar6MlIvkZUmann6Dc=);
+        text-align: center;
+    h2{
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-weight: bold;
+        margin: auto;
+        width: 15rem;
+    }
+    
+    }
+
+    .barba{
+        width: 17rem;
+        height: 5rem;
+        margin: 20px;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 5rem 5rem;
+        opacity: 0.5;
+        background: url(https://st3.depositphotos.com/12982378/19322/i/450/depositphotos_193227682-stock-photo-close-shot-barber-shaving-man.jpg);
+        text-align: center;
+    }
+}
+
+  .cabelo:hover, .barba:hover{
+        opacity: 1;
+    }
+
+
+.sobre-nos{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+
+    div h2{
+        font-size: 3rem;
+    }
+    div p{
+        line-height: 2;
+    }
+
+    div img{
+        width: 32rem;
+        height: 32rem;
+    }
+}
+
+
+.footer{
+    display: flex;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10rem;
+    margin-bottom: 3rem;
+
+    .Atendimento, .Redes-sociais {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Redes-sociais img:hover{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+ .copy{
+       text-align: center;
+       padding: 3rem 0;
+    }
+
+
+    @media (max-width: 768px) {
+        .conteiner-serviços{
+            margin-bottom: 10rem;
+        }
+
+        .serviços{
+            flex-direction: column;
+        }
+        .sobre-nos{
+            flex-direction: column;
+            gap: 0px;
+            margin-bottom: 20rem;
+
+            div img{
+                width: 100%;
+            }
+        }
+    }
